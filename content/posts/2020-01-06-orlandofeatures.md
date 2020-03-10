@@ -1,12 +1,13 @@
----
-title: It's Release Season for ServiceN(Orlando)w
-type: post
-tag: 
-  - ServiceNow
-summary: My hot tips for ServiceNow Orlando release
-date: 2020/01/06
-author: Andrew
----
++++
+title = "Happy (Educational) Holidays!"
+summary = "My hot tips for ServiceNow Orlando release"
+tags = [
+    "ServiceNow",
+]
+date = "2020-01-06"
+toc = true
++++
+
 
 Another half a year, another ServiceNow release notes to go through! Only two days ago the Release Testing Preview of the ServiceNow Orlando version was made live for non-production instances. I know it's a bit weird, but I love reading [release notes](https://docs.servicenow.com/bundle/orlando-rtp-release-notes/page/rtp-rn/family-release-notes.html)! I've had a quick squizz and here's my pick of cool features and things to get excited about in list form.
 

@@ -1,13 +1,13 @@
----
-title: Hello World
-type: post
-tags: 
-  - Blog
-  - Personal
-# summary: A new website, a new blog, hopefully a new enthusiasm for writing!
-date: 2019-12-10
-# author: Andrew
----
++++
+title = "Hello World"
+summary = "A new website, a new blog, hopefully a new enthusiasm for writing!"
+tags = [
+    "Blog",
+    "Personal",
+]
+date = "2019-12-10"
+toc = false
++++
 
 ## Hello World. This is the new internet.
 

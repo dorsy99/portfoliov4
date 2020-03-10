@@ -1,14 +1,14 @@
----
-title: Happy (Educational) Holidays!
-type: post
-tag: 
-  - ServiceNow
-  - Personal
-  - Education
-summary: Having had a week off for Christmas, I managed to talk work into another week (minus a public holiday) for self improvement
-date: 2019/12/31
-author: Andrew
----
++++
+title = "Happy (Educational) Holidays!"
+summary = "Having had a week off for Christmas, I managed to talk work into another week (minus a public holiday) for self improvement"
+tags = [
+    "ServiceNow",
+    "Personal",
+    "Education",
+]
+date = "2019-12-31"
+toc = false
++++
 
 ## Why do we love virtual badges so much?
 
@@ -26,7 +26,7 @@ My first point of call was the CMDB Fundamentals course. It consists of two Micr
 - I do love badges
 
 Here's how I did after day 1:
-![Badges](/assets/img/badges.png)
+![Badges](/img/badges.png)
 
 ## Next on the agenda
 

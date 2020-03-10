@@ -1,12 +1,12 @@
----
-title: ServiceNow Developer MVP 2020
-type: post
-tag: 
-  - ServiceNow
-summary: Totally a real thing that I (apparently) deserve
-date: 2020/01/24
-author: Andrew
----
++++
+title = "ServiceNow Developer MVP 2020"
+summary = "Totally a real thing that I (apparently) deserve"
+tags = [
+    "ServiceNow",
+]
+date = "2020-01-24"
+toc = false
++++
 
 ## Holy Crap
 
