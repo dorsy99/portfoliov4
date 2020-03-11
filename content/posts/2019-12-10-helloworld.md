@@ -6,7 +6,7 @@ tags = [
     "Personal",
 ]
 date = "2019-12-10"
-toc = false
+toc = true
 +++
 
 ## Hello World. This is the new internet.
@@ -43,8 +43,8 @@ I also love that it's taught me to use Git and write in Markdown.
 
 ## What's next?
 
-The website will continue to improve as I find time to fix it, and (hopefully!) get to learn Vue. I also have some plans for creating some really cool ServiceNow content and sharing it with the world.
+The website will continue to improve as I find time to fix it, and (hopefully!) get to learn Vue `spoiler from the future - It doesn't!`. I also have some plans for creating some really cool ServiceNow content and sharing it with the world.
 
 Thanks for sticking with me! Catch you next post ;)
   
-  Andrew
+`- Andrew`

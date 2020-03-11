@@ -1,3 +1,4 @@
 .gitmodules
 .env
 .DS_Store
+public/

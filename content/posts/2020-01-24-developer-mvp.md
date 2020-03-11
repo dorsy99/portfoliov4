@@ -38,4 +38,5 @@ This year I am going to push myself to take the Community Developer thing to a w
 I also encourage you to take the time to find the other MVPs stuff. Look at their profiles on Community, Find their Twitter, LinkedIn, GitHub or blog. If you are interested in ServiceNow development at all, you **will** learn something.
 
 I'm just thankful what I'm doing is appreciated :)
+
 `- Andrew`
