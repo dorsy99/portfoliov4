@@ -1,5 +1,5 @@
 +++
-title = "Happy (Educational) Holidays!"
+title = "Orlando Release - Best New Features"
 summary = "My hot tips for ServiceNow Orlando release"
 tags = [
     "ServiceNow",

@@ -18,7 +18,7 @@
 			{{- with .Site.Params.homeSubtitle }}
 			<p id="home-subtitle">{{.}}</p>
             {{- end }}
-            <div class="avitar" style="text-align: center;"><img src="/avitar.jpg" width="200px" height="200px" /></div>
+            <div class="avitar" style="text-align: center; padding: 10 auto 10 auto;"><img src="/avitar.jpg" width="200px" height="200px" style="border-radius: 20%;" /></div>
 			{{- with .Site.Params.social }}
 			<div id="home-social">
 				{{ partialCached "social-icons.html" . }}
