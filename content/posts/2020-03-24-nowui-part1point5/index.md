@@ -1,10 +1,9 @@
 ---
 title: "Now Experience Part 1.5: Managing and Sharing Your Code"
 summary: "If you Git Commit to this blog I'll REBASE our relationship ;)"
-date: 2020-03-24T14:02:57+10:00
-draft: true
+date: 2020-03-24T21:00:00+10:00
+draft: false
 toc: true
-images:
 tags:
   - ServiceNow
   - Now Experience
