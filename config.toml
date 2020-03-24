@@ -52,7 +52,7 @@ disqusShortname = "andrewalburydor"
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
   
   # Add custom css
-  # customCSS = ["css/foo.css", "css/bar.css"]
+  customCSS = ["css/override.css"]
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
