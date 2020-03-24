@@ -177,4 +177,6 @@ I don't want to push you, you have done SO WELL already, but... If you are up fo
 - Read about Branches, Merges, and Rebases to really geek on on Git
 - Check out my good friend [Jace's GitHub](https://github.com/jacebenson) and [Website](https://jace.pro)
 
+Thanks so much for coming on this ride! 
 
+`- Andrew`
