@@ -1,0 +1,4 @@
+#!/bin/sh
+echo Enter a Title:
+read title
+hugo new --kind post posts/$title
