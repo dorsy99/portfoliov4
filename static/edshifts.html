@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ipswich ED Shift GCAL Tool</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body style="margin-top: 20px; background-color: lightskyblue;">
+    <script>
+        Date.prototype.addHours = function (h) {
+            this.setTime(this.getTime() + (h * 60 * 60 * 1000));
+            return this;
+        }
+
+        function getCalDate(date) {
+            var dd = date.getDate();
+            var mm = date.getMonth() + 1; //January is 0!
+            var hh = date.getHours();
+            var minmin = date.getMinutes();
+            var yyyy = date.getFullYear();
+            if (dd < 10) {
+                dd = '0' + dd;
+            }
+            if (mm < 10) {
+                mm = '0' + mm;
+            }
+            if (hh < 10) {
+                hh = '0' + hh;
+            }
+            if (minmin < 10) {
+                minmin = '0' + minmin;
+            }
+
+            var string = yyyy + mm + dd + 'T' + hh + minmin + '00';
+            return string;
+        }
+
+        function doThings() {
+            var date = document.getElementById("shiftdate").value;
+            var dateObject = new Date(date);
+            var shift;
+
+            var radios = document.getElementsByName('shifttype');
+
+            for (var i = 0, length = radios.length; i < length; i++) {
+                if (radios[i].checked) {
+                    // do whatever you want with the checked radio
+                    shift = radios[i].value;
+                    // only one radio can be logically checked, don't check the rest
+                    break;
+                }
+            }
+
+            switch (shift) {
+                case "DL":
+                    dateObject.setHours("06");
+                    dateObject.setMinutes("45");
+                    dateObject.setSeconds("00");
+                    break;
+                case "DR":
+                    dateObject.setHours("09");
+                    dateObject.setMinutes("00");
+                    dateObject.setSeconds("00");
+                    break;
+                case "A3":
+                    dateObject.setHours("16");
+                    dateObject.setMinutes("30");
+                    dateObject.setSeconds("00");
+                    break;
+                case "AQ":
+                    dateObject.setHours("14");
+                    dateObject.setMinutes("15");
+                    dateObject.setSeconds("00");
+                    break;
+                case "NG":
+                    dateObject.setHours("22");
+                    dateObject.setMinutes("30");
+                    dateObject.setSeconds("00");
+                    break;
+                case "DA":
+                    dateObject.setHours("08");
+                    dateObject.setMinutes("00");
+                    dateObject.setSeconds("00");
+                    break;
+                case "AD":
+                    dateObject.setHours("12");
+                    dateObject.setMinutes("00");
+                    dateObject.setSeconds("00");
+                    break;
+            }
+
+            var startTime = (dateObject).toISOString();
+            var endTime = (dateObject.addHours(8.5)).toISOString();
+
+            var eventData = {};
+            eventData.calendarId = document.getElementById("shiftcal").value;
+            eventData.summary = shift;
+            eventData.start = {};
+            eventData.end = {};
+
+            eventData.start.dateTime = startTime;
+            eventData.end.dateTime = endTime;
+
+            createEvent(eventData);
+        }
+    </script>
+
+    <div class="container col-sm-offset-3 col-sm-6">
+        <div class="panel panel-default" id="mainbod" style="display: none;">
+            <div class="panel-heading">Ipswich ED Shifts</div>
+            <div class="panel-body text-center">
+
+                <form>
+                    <div class="formgroup" id="calpicker">
+                        <div class="col-sm-12"><label for="shiftcal">Calendar:</label></div>
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <select class="form-control" name="shiftcal" id="shiftcal">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formgroup">
+                        <div class="col-sm-12"><label for="date">Date:</label></div>
+                        <div class="col-sm-offset-3 col-sm-6"><input class="form-control" type="date" name="date" id="shiftdate"></div>
+                    </div>
+                    <div class="formgroup">
+                        <div class="col-sm-12" style="padding-top:15px"><label for="shift">Shift:</label></div>
+                        <div class="col-sm-12">
+                            <input type="radio" name="shifttype" value="DL" checked> DL (0645 - 1515)<br />
+                            <input type="radio" name="shifttype" value="DR"> DR (0900 - 1730)<br />
+                            <input type="radio" name="shifttype" value="A3"> A3 (1630 - 0100)<br />
+                            <input type="radio" name="shifttype" value="AQ"> AQ (1415 - 2245)<br />
+                            <input type="radio" name="shifttype" value="NG"> NG (2230 - 0700)<br /><br />
+                            <input type="radio" name="shifttype" value="DA"> DA (0800 - 1630)<br />
+                            <input type="radio" name="shifttype" value="AD"> AD (1200 - 2030)<br /></div>
+                    </div>
+                </form>
+
+                <div class="col-sm-offset-3 col-sm-6" style="padding-top:15px"><button class="btn btn-primary btn-block"
+                        onclick="doThings()">Add Shift</button></div>
+                
+                <div id="succ" class="alert alert-success" role="alert" style="display: none; position: fixed; top: 0px; left: 0; width: 100%;">Shift Added to Calendar!</div>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">About</div>
+            <div class="panel-body text-center">
+                Created by <a href="https://andrew.alburydor.com">Andrew</a> for Patrice<br />
+                Authorise to access the tool. Have fun :)
+                <button id="authorize_button" class="btn btn-success btn-block" style="display: none;">Authorize</button>
+                <button id="signout_button" class="btn btn-warning btn-block" style="display: none;">Sign Out</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Client ID and API key from the Developer Console
+        var CLIENT_ID = '523295716250-nvu6a10uhs5ha3o71ebe23rlf94j6bic.apps.googleusercontent.com';
+        var API_KEY = 'AIzaSyD3DAkLkUk5kwpZGX2OXwA_gbmaVFQVhXQ';
+
+        // Array of API discovery doc URLs for APIs used by the quickstart
+        var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"];
+
+        // Authorization scopes required by the API; multiple scopes can be
+        // included, separated by spaces.
+        var SCOPES = "https://www.googleapis.com/auth/calendar";
+
+        var authorizeButton = document.getElementById('authorize_button');
+        var signoutButton = document.getElementById('signout_button');
+
+        function handleClientLoad() {
+            gapi.load('client:auth2', initClient);
+        }
+
+        function initClient() {
+            gapi.client.init({
+                apiKey: API_KEY,
+                clientId: CLIENT_ID,
+                discoveryDocs: DISCOVERY_DOCS,
+                scope: SCOPES
+            }).then(function () {
+                // Listen for sign-in state changes.
+                gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+
+                // Handle the initial sign-in state.
+                updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+                authorizeButton.onclick = handleAuthClick;
+                signoutButton.onclick = handleSignoutClick;
+            }, function (error) {
+                alert(JSON.stringify(error, null, 2));
+            });
+        }
+
+        function updateSigninStatus(isSignedIn) {
+            if (isSignedIn) {
+                authorizeButton.style.display = 'none';
+                signoutButton.style.display = 'block';
+                populateDropdown();
+            } else {
+                authorizeButton.style.display = 'block';
+                mainbod.style.display = 'none';
+                signoutButton.style.display = 'none';
+            }
+        }
+
+        function handleAuthClick(event) {
+            gapi.auth2.getAuthInstance().signIn();
+        }
+
+        function handleSignoutClick(event) {
+            gapi.auth2.getAuthInstance().signOut();
+        }
+
+        function populateDropdown() {
+            gapi.client.calendar.calendarList.list().then(function (response) {
+                var $dropdown = $("#shiftcal");
+                $.each(response.result.items, function () {
+                    if (this.selected) {
+                        $dropdown.append($("<option />").val(this.id).text(this.summary));
+                    }
+                });
+                mainbod.style.display = 'block';
+            })
+        }
+
+        function createEvent(event) {
+            gapi.client.calendar.events.insert(event).then(function (response) {
+                if (response.status == 200) {
+                    doAlert();
+                }
+            });
+        }
+        
+        function doAlert() {
+            succ.style.display = 'block';
+            setTimeout(function() {
+                succ.style.display = 'none';
+            }, 2000);
+        }
+
+    </script>
+
+    <script>
+        document.getElementById("shiftdate").valueAsDate = new Date()
+    </script>
+
+    <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
+        onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+</body>
+
+</html>
