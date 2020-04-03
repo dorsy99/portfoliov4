@@ -1,8 +1,8 @@
 ---
 title: "Now Experience Addendum 1: Maintaining Your Environment"
 summary: "It's like a garden, but instead of bugs it's... well it's still bugs."
-date: 2020-03-29T21:48:35+10:00
-draft: true
+date: 2020-04-02T21:00:00+10:00
+draft: false
 toc: false
 tags: 
   - ServiceNow
