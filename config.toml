@@ -26,6 +26,8 @@ disqusShortname = "andrewalburydor"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+  [markup.highlight]
+    lineNos = true
 
 [taxonomies]
   tag = "tags"

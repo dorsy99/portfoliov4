@@ -28,11 +28,33 @@ Creating 4b8ec5da08d47d55cd6a57f11a4552ab in sys_ux_lib_source_script
 Creating 331b5f9d4137b1361b099ecf2aa4386b in sys_ux_lib_component
 ```
 
-If you have a little experience looking at ServiceNow stuff, you'll probably recognise these as two entries (sys_ids) in two tables. The Now-CLI has connected to your instance and pushed your hot, steamy fresh code to records in tables! Exciting!
-
 > For a little more info on these tables and how they relate to an instance, check out an [in-depth blog](https://medium.com/@pishchulin/servicenow-ui-framework-be88f466be01) by my fellow Developer MVP [**Andrew Pishchulin**](https://medium.com/@pishchulin/)
 
-Let's go see what's happening - Open your instance and navigate to "Workspace Experience" / "Administration" / "Landing Pages". Open one, and click the "Open UI Builder" button
+Based on the fact you are reading this, you'll probably recognise these as two entries (sys_ids) in two tables. The Now-CLI has connected to your instance and pushed your fresh, hot & steamy  code to records in tables! Exciting!
+
+Let's go see what's happening - Open your instance and navigate to "Workspace Experience" / "Administration" / "Landing Pages". Open one, and click the "Open UI Builder" button. Then switch to the "+ Add Component" menu and.......
+
+![Where the eff is it?](workspace1.png)
+
+Yep. Not there. Here's where ServiceNow are planning for the future, and have created *classes* of components, and because we haven't specified exactly what class our component is, it won't show up in the Workspace Builder. You can see the [Now Experience Guide Page](https://developer.servicenow.com/dev.do#!/guide/orlando/now-experience/cli/ui-builder) for this on Developer. Let's do what they suggest and update our `now-ui.json` to tell the instance we want it to be a "uiBuilder" component:
+
+``` json 
+{
+	"components": {
+	    "<your_component_name>": {
+			"innerComponents": [],
+			"uiBuilder": {
+				"associatedTypes": ["global.core"],
+				"label": "My Freaking Awesome Component",
+				"icon": "chart-forecast-fill",
+				"description": "So awesome you won't know what to do with it!"
+			  }
+	    }
+	},
+	"scopeName": "<your_scope_name>" 
+}
+
+```
 
 
 
