@@ -63,19 +63,7 @@ You can see the [Now Experience Guide Page](https://developer.servicenow.com/dev
 }
 ```
 
-As you can see in the highlighted lines, we are setting the component type to `global.core` (from the docs: Used for base components that are applicable in all contexts, such as Design System components.) and giving it some more details. In my tests I haven't been able to get the icon `chart-forecast-fill` to work and there doesn't seem to be a list of available icons, so I've done some legwork and here are some other options:
-
-- minus-outline
-- clipboard-outline	
-- record-activity-outline	
-- grid-three-outline
-- paperclip-outline	
-- document-outline	
-- save-outline	
-- list-fill
-- list-outline
-- publish-outline
-- chat-fill (I'm using this one)
+As you can see in the highlighted lines, we are setting the component type to `global.core` (from the docs: Used for base components that are applicable in all contexts, such as Design System components.) and giving it some more details. In my tests I haven't been able to get the icon `chart-forecast-fill` to work and ~~there doesn't seem to be a list of available icons~~ **The list of available icons is** [**HERE**](https://developer.servicenow.com/dev.do#!/reference/libraries/orlando/now-components/now-icon/gallery) - I'm going to use `chat-fill`.
 
 Once you have updated your `now-ui.json` let's re-push those components and see if we have the magic: run `now-cli deploy`. 
 
