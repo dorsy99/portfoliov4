@@ -312,7 +312,7 @@ Let's do that thing that every developer does when they are starting a new Proje
 
 Open the `index.js` file inside the `/src/1234-yourmodule` folder, and on Line 7, between the `<div></div>` tags, type "Hello World! Finally, Amirite?" Your terminal will let you know it's recompiled, and you should see something magical in your browser:
 
-[HI WORLD](cli5.png)
+![HI WORLD](cli5.png)
 
 Wow. Just wow. You are the non-gender-specific human of the hour! Give yourself a pat on the back, take a drink, let's celebrate for a second :tada::tada::tada:.
 
