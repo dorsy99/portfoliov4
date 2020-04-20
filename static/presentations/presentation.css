@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body { 
@@ -17,9 +17,38 @@ h1, h2, h3 {
 
 .remark-slide-content {
     background-color:#2c3e50;
-}
-
-* {
     color:white;
 }
 
+.remark-slide-content a {
+    color:white;
+}
+
+.remark-notes p {
+    color: black !important;
+}
+
+.basic h1 {
+    text-align: center;
+}
+
+.footnote {
+    position: absolute;
+    bottom: 3em;
+  }
+
+ /* Two-column layout */
+ .left-column {
+    color: #777;
+    width: 20%;
+    height: 92%;
+    float: left;
+  }
+    .left-column h2:last-of-type, .left-column h3:last-child {
+      color: #000;
+    }
+  .right-column {
+    width: 75%;
+    float: right;
+    padding-top: 1em;
+  }
