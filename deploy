@@ -3,6 +3,6 @@ USER=andrewdo
 HOST=alburydor.com
 DIR=portfoliov4
 
-hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
-
+# hugo && rsync -avz --delete public/ ${USER}@${HOST}:~/${DIR}
+hugo && rsync -avzc public/ ${USER}@${HOST}:~/${DIR}
 exit 0
