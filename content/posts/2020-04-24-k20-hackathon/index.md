@@ -1,6 +1,6 @@
 ---
 title: "Knowledge 2020 CreatorCon Virtual Hackathon"
-summary: "Hacking. And Thongs...? :flag_au:"
+summary: "Hacking. And Thongs...? 🇦🇺"
 date: 2020-04-24T13:00:00+10:00
 draft: false
 toc: false
