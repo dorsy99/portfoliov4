@@ -1,0 +1,24 @@
+  
+{
+    "name": "portfoliov4",
+    "version": "1.0.0",
+    "description": "Portfolio v4 with Hugo",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "post": "echo \"hugo new --kind post post/post-name\""
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/dorsy99/portfoliov4"
+    },
+    "author": "Andrew Albury-Dor",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/dorsy99/portfoliov4/issues"
+    },
+    "homepage": "https://andrew.alburydor.com",
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+  }
