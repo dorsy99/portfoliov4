@@ -7,6 +7,8 @@ toc: true
 tags: 
   - ServiceNow
   - Paris Release
+aliases: 
+  - /posts/2020-04-19-paris-predictions/
 ---
 
 And so, like the grains of sand through the hour glass, another ServiceNow major release is around the corner! This time it's distinctly Euro in it's flavour.
