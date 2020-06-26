@@ -1,4 +1,5 @@
 #!/bin/sh
 echo Enter a Title:
 read title
-hugo new --kind post posts/$title
+now=$(date +%F)
+hugo new --kind post posts/$now-$title
