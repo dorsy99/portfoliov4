@@ -37,7 +37,7 @@ I was planning on doing a lot more testing (scope vs global, during loops or not
 > 
 > `startFlow` vs `startFlowQuick` and
 > 
-> `startSubflow` vs `startSubflowQuick`
+> `executeFlow` vs `executeFlowQuick`
 
 These all should be Asynchronous and in theory, write two work-notes to a job a second apart. Let's see what happened...
 
