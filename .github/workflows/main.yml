@@ -17,7 +17,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.74.1'
+          hugo-version: latest
           # extended: true
 
       - name: Build
@@ -28,7 +28,7 @@ jobs:
         with:
           switches: -avzc
           path: public/
-          remote_path: /portfoliov4
+          remote_path: ~/portfoliov4
           remote_host: ${{ secrets.DEPLOY_HOST }}
           remote_port: ${{ secrets.DEPLOY_PORT }}
           remote_user: ${{ secrets.DEPLOY_USER }}
