@@ -2,7 +2,7 @@
 title: "My Journey to Community Level 5"
 summary: "See this other question. If this is the correct answer, please mark helpful and correct. thx-"
 date: 2020-07-23T09:00:00+10:00
-draft: true
+draft: false
 toc: false
 tags: 
   - ServiceNow
