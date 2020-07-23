@@ -22,7 +22,7 @@ Rather than run you through all the sessions I have been to, I'm going to give y
 
 Before the conference proper commenced, we had the *Knowledge 2020 creatorcon Hackathon 2020 digital experience hackathon* (Not the actual name, but very long). I was excited about this being my first "real" hackathon and figured I would put a team together from Australia and give it a real go. 
 
-This didn't really happen. I got a few quick "yes"'s from my friends Kevin and Dave, but then didn't find anyone else local who was interested in spending a whole weekend doing "work". Luckily, [Jace](https://jace.pro) and Jarod who are fellow Dev MVPs also wanted to join, so we had a team of 5. 
+This didn't really happen. I got a few quick "yes"'s from my friends Kevin and Dave, and Kevin invited his friend Chris, but then didn't find anyone else local who was interested in spending a whole weekend doing "work". Luckily, [Jace](https://jace.pro) and Jarod who are fellow Dev MVPs also wanted to join, so we ended up with a team of 6. 
 
 We had a few quick meetings about the idea we were going to try and one was chosen. In Australia the event ran from 7am Saturday till 2pm Monday, which worked out pretty nice. We didn't push anyone too hard, most people worked about 7 or 8 hours during the day, and I think it came together well. 
 
