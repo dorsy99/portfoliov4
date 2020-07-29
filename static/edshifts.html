@@ -50,6 +50,7 @@
 
         function doThings() {
             var date = document.getElementById("shiftdate").value;
+            var color = document.getElementById("color").value
             var dateObject = new Date(date);
             var shift;
 
@@ -114,6 +115,10 @@
             eventData.start.dateTime = startTime;
             eventData.end.dateTime = endTime;
 
+            if (color) {
+                eventData.colorId = color;
+            }
+
             createEvent(eventData);
         }
     </script>
@@ -134,6 +139,25 @@
                     <div class="formgroup">
                         <div class="col-sm-12"><label for="date">Date:</label></div>
                         <div class="col-sm-offset-3 col-sm-6"><input class="form-control" type="date" name="date" id="shiftdate"></div>
+                    </div>
+                    <div class="formgroup" id="colorpicker">
+                        <div class="col-sm-12"><label for="shiftcal">Event Colour:</label></div>
+                        <div class="col-sm-offset-3 col-sm-6">
+                            <select class="form-control" name="color" id="color">
+                                <option value="">Default</option>
+                                <option value="1">Blue</option>
+                                <option value="2">Green</option>
+                                <option value="3">Purple</option>
+                                <option value="4">Red</option>
+                                <option value="5">Yellow</option>
+                                <option value="6">Orange</option>
+                                <option value="7">Turquoise</option>
+                                <option value="8">Gray</option>
+                                <option value="9">Bold Blue</option>
+                                <option value="10">Bold Green</option>
+                                <option value="11">Bold Red</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="formgroup">
                         <div class="col-sm-12" style="padding-top:15px"><label for="shift">Shift:</label></div>
