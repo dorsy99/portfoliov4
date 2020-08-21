@@ -1,5 +1,5 @@
 baseURL = "https://andrew.alburydor.com"
-languageCode = "en-us"
+languageCode = "en-au"
 defaultContentLanguage = "en"
 title = "Andrew Albury-Dor"
 theme = "hermit"
@@ -96,3 +96,8 @@ disqusShortname = "andrewalburydor"
     name = "About"
     url = "about/"
     weight = 5
+
+  [[menu.main]]
+    name = "Extracurricular"
+    url = "extracurricular/"
+    weight = 10
