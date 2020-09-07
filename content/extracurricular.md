@@ -6,6 +6,11 @@ title: "Extracurricular Appearances"
 
 - #### [Brisbane SN Dev Meetup, April 2020](/presentations/april2020)
 
+## Share Apps
+
+- [System Status v2](https://developer.servicenow.com/connect.do#!/share/contents/5434060_system_status_v2?v=1.01&t=PRODUCT_DETAILS)
+{{< youtube id=f-o6S-14aJs >}}
+
 ## YouTube Appearances 
 
 **Live Code Happy Hour** is a weekly live-stream by the ServiceNow Developer program. I watch and have been involved in a number of their escapades, as seen below!
@@ -44,4 +49,10 @@ title: "Extracurricular Appearances"
 {{< youtube id=XKIIkiMUSwA >}}
 
 
+## Stickers
 
+If you love ServiceNow as much as I do, you want to create and share with the world. One way I do this is via my [RedBubble Stickers](https://www.redbubble.com/people/dorsy99/shop)!
+
+![Stickers1](/img/stickers1.jpeg)
+
+![Stickers2](/img/stickers2.jpeg)
