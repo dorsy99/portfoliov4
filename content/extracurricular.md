@@ -11,6 +11,10 @@ title: "Extracurricular Appearances"
 - [System Status v2](https://developer.servicenow.com/connect.do#!/share/contents/5434060_system_status_v2?v=1.01&t=PRODUCT_DETAILS)
 {{< youtube id=f-o6S-14aJs >}}
 
+## Other (Official) Blogs
+
+- [Community Content Highlight - Q1 2020](https://developer.servicenow.com/blog.do?p=/post/2020q1-mvp-content/)
+
 ## YouTube Appearances 
 
 **Live Code Happy Hour** is a weekly live-stream by the ServiceNow Developer program. I watch and have been involved in a number of their escapades, as seen below!
