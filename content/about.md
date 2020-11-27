@@ -41,8 +41,8 @@ Coming up to 10 years experience in Service Delivery, for the last 4 years I hav
 ## Experience
 
 > ### ServiceNow Senior Developer
-> - Australia Post
-> - September 2020 - Present
+- Australia Post
+- September 2020 - Present
 
 > ### ServiceNow Technical Lead
 - Auto & General Insurance
