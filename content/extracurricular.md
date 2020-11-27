@@ -5,7 +5,7 @@ title: "Extracurricular Appearances"
 ## Talks
 
 - #### [Brisbane SN Dev Meetup, April 2020](/presentations/april2020)
-
+- #### [CreatorCon 2020 Talk - Flow Designer & IntegrationHub](https://events.servicenow.com/widget/servicenow/creatorcon2020/creatorconschedule/session/1600462651353001eENq#16007999589720017YHf)
 ## Share Apps
 
 - [System Status v2](https://developer.servicenow.com/connect.do#!/share/contents/5434060_system_status_v2?v=1.01&t=PRODUCT_DETAILS)

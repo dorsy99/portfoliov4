@@ -40,9 +40,13 @@ Coming up to 10 years experience in Service Delivery, for the last 4 years I hav
 
 ## Experience
 
+> ### ServiceNow Senior Developer
+> - Australia Post
+> - September 2020 - Present
+
 > ### ServiceNow Technical Lead
 - Auto & General Insurance
-- February 2018 - Present
+- February 2018 - September 2020
 
 Platform Owner, Developer, and Architect for ServiceNow within the organisation, I successfully implemented Discovery, CMDB, Orchestration/IntegrationHub, Self-Service Password Reset and many other value-add projects.
 
