@@ -15,3 +15,7 @@ h1 {
 .chroma .hl {
     background-color: #1b252f !important; 
 }
+
+.home-footer p {
+    color: #e8eef2;
+}
