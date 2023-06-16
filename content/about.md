@@ -13,7 +13,7 @@ Check out my [Blog](/posts/) for my writing (some of which will be personal, som
 <!-- But most of all, Thanks! -->
 
 # Resumé
-Coming up to 10 years experience in Service Delivery, for the last 5 years I have lived and breathed ServiceNow. I am passionate about getting the most out of your investment, and building new and innovative applications on the platform.
+Over 10 years experience in Service Delivery, for the last 7 I have lived and breathed ServiceNow. I am passionate about getting the most out of your investment, and building new and innovative applications on the platform.
 
 >Below is a (fairly) up-to-date list of my certifications and experience, but for the **Real Live Deal** please see my:
 >- [LinkedIn](https://www.linkedin.com/in/andrewalburydor)
